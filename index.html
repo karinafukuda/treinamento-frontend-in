@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Treinamento Frontend</title>
+    <link rel="icon" type="image/png" href="./images/logo_inmetrics.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/global-styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <!-- Menu lateral -->
+    <div class="sidebar">
+        <div class="sidebar__title">
+          <img class="sidebar__title__img" src="images/logo_inmetrics.png" alt="logo Inmetrics"/>
+        </div>
+
+        <span class="sidebar__menutitle"> General </span>
+
+        <div class="sidebar__menu">
+          <button class="sidebar__button sidebar__button--selected">
+            <i class="fas fa-columns"></i>
+            Dashboard
+          </button>
+          <button class="sidebar__button">
+            <i class="fas fa-wallet"></i>
+            My Wallet
+          </button>
+          <button class="sidebar__button">
+            <i class="fas fa-chart-line"></i> Activity
+          </button>
+        </div>
+        <button class="sidebar__button sidebar__button--logout">
+          <i class="fas fa-sign-out-alt"></i>
+          Log Out
+        </button>
+      </div>
+    </div>
+    <!-- Conteúdo principal -->
+    <div class="page">
+      <div class="navbar">
+        <i class="fas fa-search">
+          <input class="navbar__searchbox" type="text"
+          /></i>
+            <button class="navbar__button">Connect Wallet</button>
+            <button class="navbar__button">Connect Wallet</button>
+            <button class="navbar__useravatar">
+          <img
+            class="navbar__useravatar__photo"
+            src="./images/user-photo.png"
+            alt="user avatar"
+          />
+        </button>
+      </div>
+      <!-- Headers - Títulos -->
+      <div class="page__content">
+        <div class="page__header">
+          <h1 class="page__header__title">Colaboradores</h1>
+          <h2 class="page__header__subtitle">
+            Saiba tudo sobre as pessoas que trabalham na Inmetrics
+          </h2>
+        </div>   
+        <!-- Grupo de Colaboradores -->
+        <div class="employee__group">
+            <div class="employee">
+              <img class="employee__img" src="./images/img-1.png" alt="Pokemon 01"/>
+              <h3 class="employee__title">Pokemon 01</h3>
+            </div>
+            <div class="employee">
+              <img class="employee__img" src="./images/img-2.jpg" alt="Pokemon 02"/>
+              <h3 class="employee__title">Pokemon 02</h3>
+            </div>
+            <div class="employee">
+              <img class="employee__img" src="./images/img-3.png" alt="Pokemon 03"/>
+              <h3 class="employee__title">Pokemon 03</h3>
+            </div>
+            <div class="employee">
+              <img class="employee__img" src="./images/img-2.jpg" alt="Pokemon 04"/>
+              <h3 class="employee__title">Pokemon 04</h3>
+            </div>
+            <div class="employee">
+              <img class="employee__img" src="./images/img-3.png" alt="Pokemon 05"/>
+              <h3 class="employee__title">Pokemon 05</h3>
+            </div>
+            <div class="employee">
+              <img class="employee__img" src="./images/img-5.jpg" alt="Pokemon 06" />
+              <h3 class="employee__title">Pokemon 06</h3>
+            </div>
+            <div class="employee">
+              <img class="employee__img" src="./images/img-2.jpg" alt="Pokemon 07" />
+              <h3 class="employee__title">Pokemon 07</h3>
+            </div>
+            <div class="employee">
+              <img class="employee__img" src="./images/img-1.png" alt="Pokemon 08" />
+              <h3 class="employee__title">Pokemon 08</h3>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
