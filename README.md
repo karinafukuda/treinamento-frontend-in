@@ -59,4 +59,4 @@ Obs: <strong>o site ainda não foi configurado com responsividade em mobile.</st
 <br/>
 [https://fonts.google.com](https://fonts.google.com)
 <br/>
-[https://www.w3schools.com/howto/howto_css_parallax.asp](https://www.w3schools.com/howto/howto_css_parallax.asp)
+[https://www.w3schools.com](https://www.w3schools.com)
