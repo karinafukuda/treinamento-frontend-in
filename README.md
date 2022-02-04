@@ -1,4 +1,6 @@
-# Aulas de Frontend na Firma
+# Aulas de Frontend na Firma  <img alt="logo html5" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg"/><img  alt="logo css3" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg"/>
+
+  
 
 Sim, gente! A Inmetrics também treina muito os colaboradores.
 Esse repô foi para usar uma referência e aplicar alguns conceitos passados durante o treinamento, ministrado pelo Gabriel Zanoni (front-end sênior).
