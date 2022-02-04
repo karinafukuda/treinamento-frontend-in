@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamento Frontend</title>
-    <link rel="icon" type="image/png" href="./images/logo_inmetrics.png"/>
+    <link rel="icon" type="image/png" href="./images/logo-icon-inmetrics.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,28 +19,34 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/global-styles.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="./styles/page-styles.css">
+    <link rel="stylesheet" href="./styles/sidebar-style.css">
+    <link rel="stylesheet" href="./styles/navbar-style.css">
+    <link rel="stylesheet" href="./styles/tips-style.css">
+    <link rel="stylesheet" href="./styles/display-employee-styles.css">
+    <link rel="stylesheet" href="./styles/employee-styles.css">
+    <link rel="stylesheet" href="styles/jobs-list-style.css" />
   </head>
-
   <body>
     <!-- Menu lateral -->
     <div class="sidebar">
         <div class="sidebar__title">
           <img class="sidebar__title__img" src="images/logo_inmetrics.png" alt="logo Inmetrics"/>
         </div>
-
         <span class="sidebar__menutitle"> General </span>
-
         <div class="sidebar__menu">
           <button class="sidebar__button sidebar__button--selected">
+            <span class="selected-indicator"></span>
             <i class="fas fa-columns"></i>
             Dashboard
           </button>
           <button class="sidebar__button">
+            <span class="selected-indicator"></span>
             <i class="fas fa-wallet"></i>
             My Wallet
           </button>
           <button class="sidebar__button">
+            <span class="selected-indicator"></span>
             <i class="fas fa-chart-line"></i> Activity
           </button>
         </div>
@@ -49,21 +58,22 @@
     </div>
     <!-- Conteúdo principal -->
     <div class="page">
-      <div class="navbar">
-        <i class="fas fa-search">
-          <input class="navbar__searchbox" type="text"
-          /></i>
-            <button class="navbar__button">Connect Wallet</button>
-            <button class="navbar__button">Connect Wallet</button>
-            <button class="navbar__useravatar">
-          <img
-            class="navbar__useravatar__photo"
-            src="./images/user-photo.png"
-            alt="user avatar"
-          />
-        </button>
-      </div>
       <!-- Headers - Títulos -->
+      <div class="navbar">            
+          <div class="navbar__searchbox"> 
+            <i class="fas fa-search"></i>         
+            <input  type="text" placeholder="Busque pelo nome do colaborador" /></i>
+          </div>
+          <br/><br/><br/>
+          <div>
+            <button class="navbar__button">Connect Wallet</button>
+            <img
+              class="navbar__useravatar__photo"
+              src="./images/user-photo.png"
+              alt="user avatar"
+            /> 
+          </div>  
+      </div>
       <div class="page__content">
         <div class="page__header">
           <h1 class="page__header__title">Colaboradores</h1>
@@ -71,42 +81,161 @@
             Saiba tudo sobre as pessoas que trabalham na Inmetrics
           </h2>
         </div>   
+        <!-- Botões filtro - tips -->
+        <div class="buttons__filter">
+          <div class="button__filter animation" type="text"> <a href="#"><i class="fas fa-people-arrows"></i> Cargo</a></div>
+          <div class="button__filter animation" type="text"> <a href="#"><i class="fas fa-tasks"></i> Horizontal</a></div>
+          <div class="button__filter animation" type="text"> <a href="#"><i class="far fa-file-code"></i> Tecnologia</a> </div>
+          <div class="button__filter animation" type="text"> <a href="#"><i class="fas fa-user-astronaut"></i> Gestor</a></div>
+        </div>
         <!-- Grupo de Colaboradores -->
+        <div class="section">
         <div class="employee__group">
             <div class="employee">
-              <img class="employee__img" src="./images/img-1.png" alt="Pokemon 01"/>
-              <h3 class="employee__title">Pokemon 01</h3>
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-1.png" alt="Pessoa 01" />
+                <img  alt="logo react.js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"/>               
+              </div>             
+              <h3 class="employee__title">Pessoa 01</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
-              <img class="employee__img" src="./images/img-2.jpg" alt="Pokemon 02"/>
-              <h3 class="employee__title">Pokemon 02</h3>
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-2.jpg" alt="Pessoa 02" />
+                <img alt="logo angular" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-plain.svg"/> 
+              </div>             
+              <h3 class="employee__title">Pessoa 02</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
-              <img class="employee__img" src="./images/img-3.png" alt="Pokemon 03"/>
-              <h3 class="employee__title">Pokemon 03</h3>
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-5.png" alt="Pessoa 03" />
+                <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
+              </div>         
+              <h3 class="employee__title">Pessoa 03</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
-              <img class="employee__img" src="./images/img-2.jpg" alt="Pokemon 04"/>
-              <h3 class="employee__title">Pokemon 04</h3>
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-2.jpg" alt="Pessoa 04" />
+                <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
+              </div>
+              <h3 class="employee__title">Pessoa 04</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
-              <img class="employee__img" src="./images/img-3.png" alt="Pokemon 05"/>
-              <h3 class="employee__title">Pokemon 05</h3>
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-3.png" alt="Pessoa 05" />
+                <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
+              </div>
+              <h3 class="employee__title">Pessoa 05</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
-              <img class="employee__img" src="./images/img-5.jpg" alt="Pokemon 06" />
-              <h3 class="employee__title">Pokemon 06</h3>
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-5.png" alt="Pessoa 06" />
+                <img  alt="logo javascript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"/>
+              </div>
+              <h3 class="employee__title">Pessoa 06</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
-              <img class="employee__img" src="./images/img-2.jpg" alt="Pokemon 07" />
-              <h3 class="employee__title">Pokemon 07</h3>
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-2.jpg" alt="Pessoa 07" />
+                <img  alt="logo javascript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"/>
+              </div>     
+              <h3 class="employee__title">Pessoa 07</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
-              <img class="employee__img" src="./images/img-1.png" alt="Pokemon 08" />
-              <h3 class="employee__title">Pokemon 08</h3>
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-1.png" alt="Pessoa 08" />
+                <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
+              </div>
+              <h3 class="employee__title">Pessoa 08</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+            </div>
+            <div class="employee">
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-2.jpg" alt="Pessoa 09" />
+                <img alt="logo angular" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-plain.svg"/> 
+              </div>             
+              <h3 class="employee__title">Pessoa 09</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+            </div>
+            <div class="employee">
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-5.png" alt="Pessoa 10" />
+                <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
+              </div>         
+              <h3 class="employee__title">Pessoa 10</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+            </div>
+            <div class="employee">
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-2.jpg" alt="Pessoa 11" />
+                <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
+              </div>
+              <h3 class="employee__title">Pessoa 11</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+            </div> 
+            <div class="employee">
+              <div class="employee__images" style="display:inline-flex">
+                <img class="employee__img" src="./images/img-1.png" alt="Pessoa 12" />
+                <img  alt="logo react.js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"/>
+              </div>              
+              <h3 class="employee__title">Pessoa 12</h3>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+            </div>         
+          </div>
+          <br/>
+          <!--Display colaborador sem alocação-->
+           <div class="employee__list__no__allocation">
+                <h4 class="employee__list__title__no__allocation">Colaboradores sem alocação</h5>
+                <ol>
+                  <li class="employee__listed__no__allocation">
+                    Maria Luiza em 01/02/22
+                  </li>
+                  <li class="employee__listed__no__allocation">Carlos Junior em 31/01/22</li>
+                  <li class="employee__listed__no__allocation" >Mariana Araújo em 20/01/22</li>
+                  <li class="employee__listed__no__allocation">
+                    Maria Luiza em 01/02/22
+                  </li>
+                  <li class="employee__listed__no__allocation">Carlos Junior em 31/01/22</li>
+                  <li class="employee__listed__no__allocation" >Mariana Araújo em 20/01/22</li>
+                  <li class="employee__listed__no__allocation">Carlos Junior em 31/01/22</li>
+                  <li class="employee__listed__no__allocation" >Mariana Araújo em 20/01/22</li>
+                  <li class="employee__listed__no__allocation" >Mariana Araújo em 20/01/22</li>
+                  <li class="employee__listed__no__allocation">Carlos Junior em 31/01/22</li>
+                  <li class="employee__listed__no__allocation" >Mariana Araújo em 20/01/22</li>
+                </ol>
+                <a class="employee__list__link" href="#">Ver mais</a>
+            </div> 
+        </div>
+        <div class="line"></div>
+          <!--Lista Vagas-->
+          <div class="displays__info">
+            <div class="jobs__list">
+              <h3 class="jobs__list__title">Vagas em aberto</h3>
+              <div class="job" type="text"><a href="#">  Itaú</a></div>
+              <div class="job" type="text"> <a href="#">  Bradesco</a></div>
+              <div class="job" type="text"> <a href="#"> Santander</a> </div>
+              <div class="job" type="text"><a href="#">  Digio</a></div>
+            </div>
+            <!--Lista Admitidos-->
+            <div class="employee__list">
+              <h3 class="employee__list__title">Colaboradores recém-contratados</h3>
+              <div class="employee__listed" type="text"><a href="#">  Ana Luiza - Desenvolvedora C# - SR - 01/02/22 </a></div>
+              <div class="employee__listed" type="text"> <a href="#">  Daniel Ferraz - Desenvolvedor C# - JR - 01/02/22</a></div>
+              <div class="employee__listed" type="text"> <a href="#"> Lívia Silva - Desenvolvedora Java - SR - 31/01/22</a> </div>
+              <div class="employee__listed" type="text"><a href="#">  Jorge Antonio - Desenvolvedor C# - SR - 30/01/22</a></div>
             </div>
           </div>
-      </div>
+      </div>   
     </div>
+    <footer>
+      <p>Desenvolvido por &copy; Karina Fukuda ' 2022</p>
+    </footer>
+    
   </body>
 </html>

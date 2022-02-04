@@ -1,7 +1,54 @@
+* {
+  --yellow: #ffd369;
+  --btn-yellow-hover: #f0ff99;
+  --dark-gray: #222831;
+  --gray: #888;
+  --white: #eeeeee;
+  --bg-color: #393e46;
+  --bg-gray-tips: #777;
+  --text-white: #fff;
+  --box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1);
+  --box-shadow-card: 3px 3px 4px 2px rgba(10, 20, 40, 0.84);
+  --blue-hover-card: hsl(225, 61%, 25%);
+}
+
 body,
 button {
   font-family: 'Poppins', arial, sans-serif;
 }
+
 body {
   margin: 0;
+  background-color: var(--dark-gray);
+  display: grid;
+  grid-template:
+    'sidebar sidebar tips tips tips tips'
+    'sidebar sidebar employee employee employee'
+    'sidebar sidebar employee employee employee'
+    'sidebar sidebar employee employee employee'
+    'sidebar sidebar employee employee employee';
+  height: 100vh;
+}
+
+h5 {
+  margin-right: 15px;
+  display: inline-flex;
+  text-align: center;
+  color: var(--blue-hover-card);
+}
+
+.line {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  opacity: 0.3;
+  border-bottom: 0.1px solid var(--gray);
+}
+
+footer {
+  margin: 0 auto;
+  color: var(--gray);
+  font-size: 12px;
 }

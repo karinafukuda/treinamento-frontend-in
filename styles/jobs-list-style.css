@@ -1,0 +1,70 @@
+.displays__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jobs__list__title,
+.employee__list__title {
+  color: var(--white);
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.jobs__list > * a,
+.employee__list > * a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 8px 10px 10px 10px;
+  padding: 10px;
+  background-color: var(--bg-gray-tips);
+  opacity: 0.9;
+  border-radius: 16px;
+  min-width: 140px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.jobs__list > * a {
+  width: 240px;
+}
+
+.employee__list > * a {
+  width: 780px;
+}
+
+.employee__list__title,
+.employee__list > * a {
+  margin-left: 30px;
+}
+
+.jobs__list a:hover,
+.employee__listed a:hover {
+  color: var(--yellow);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 80%);
+}
+
+@media all and (min-width: 1200px) {
+  .jobs__list > * a,
+  .employee__list > * a {
+    width: 540px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .jobs__list > * a,
+  .employee__list > * a {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 890px) {
+  .jobs__list > * a,
+  .employee__list > * a {
+    width: 100vw;
+    height: auto;
+  }
+}

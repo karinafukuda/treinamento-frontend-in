@@ -1,0 +1,50 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.employee__list__no__allocation {
+  display: relative;
+  bottom: 40px;
+  background-color: var(--gray);
+  opacity: 0.7;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.employee__list__title__no__allocation h4 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.employee__list__no__allocation {
+  text-align: center;
+  color: var(--dark-gray);
+
+  font-weight: 300;
+}
+
+.employee__listed__no__allocation {
+  background-color: var(--dark-gray);
+  opacity: 0.7;
+  font-weight: 300;
+  padding: 4px;
+  color: var(--white);
+  margin-top: 16px;
+  width: 170px;
+  height: 44px;
+  border-radius: 6px;
+}
+
+.employee__list__link {
+  position: relative;
+  left: 75px;
+  bottom: 12px;
+  color: #000;
+  font-size: 12px;
+}
+
+.employee__list__link:hover {
+  color: var(--yellow);
+}
