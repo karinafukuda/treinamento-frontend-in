@@ -39,12 +39,6 @@ Obs: <strong>o site ainda não foi configurado com responsividade em mobile.</st
 
 ---
 
-## Deploy
-
-<a href="https://frontend-in.netlify.app/"> Acesse o site aqui</a>
-
----
-
 ## Links de referência
 
 [https://fontawesome.com/start](https://fontawesome.com/start)
