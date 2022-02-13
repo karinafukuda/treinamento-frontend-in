@@ -37,6 +37,12 @@ Obs: <strong>o site ainda não foi configurado com responsividade em mobile.</st
 
 ---
 
+## O site (em andamento...)
+
+[https://front-treinamento.netlify.app/](https://front-treinamento.netlify.app/)
+
+---
+
 ## Links de referência
 
 [https://fontawesome.com/start](https://fontawesome.com/start)
