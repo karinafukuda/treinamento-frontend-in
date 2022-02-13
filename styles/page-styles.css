@@ -1,3 +1,8 @@
+#main {
+  transition: margin-left 0.5s;
+  padding: 0 2em 0 -6em;
+}
+
 .page {
   margin-left: 250px;
   padding: 20px;
@@ -13,6 +18,9 @@
   color: var(--white);
   font-weight: 700;
   margin-top: -20px;
+  width: 100%;
+  padding: -6em 6em 0 6em;
+  text-align: left;
 }
 
 .page__header__subtitle {
@@ -20,5 +28,18 @@
   font-size: 14px;
   font-weight: 400;
   margin-top: -20px;
-  padding: 5px;
+  padding: 0.5rem;
+  text-align: left;
+  width: 500px;
+}
+
+@media screen and (max-width: 660px) {
+  .page {
+    margin-left: 0;
+  }
+
+  #main {
+    transition: margin-left 0.5s;
+    padding: 0 2em 0 2em;
+  }
 }

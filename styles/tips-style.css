@@ -1,7 +1,8 @@
 .buttons__filter > * {
   inline-size: -webkit-fill-available;
   display: inline-flex;
-  max-width: 150px;
+  flex-wrap: no-wrap;
+  width: 150px;
   margin: 0;
 }
 
@@ -11,7 +12,7 @@
   background-color: var(--gray);
   opacity: 0.9;
   border-radius: 24px;
-  min-width: 80px;
+
   width: 150px;
   color: var(--white);
   text-decoration: none;
@@ -38,4 +39,7 @@
     box-shadow: 0 2px 2px rgba(100, 100, 100, 70%);
     transform: translateY(-5px);
   }
+}
+
+@media screen and (max-height: 450px) {
 }

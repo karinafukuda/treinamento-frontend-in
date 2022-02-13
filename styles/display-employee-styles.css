@@ -51,3 +51,9 @@
   font-size: 0.9em;
   transition: 0.5s;
 }
+
+@media screen and(max-height: 450px) {
+  .display {
+    display: none;
+  }
+}

@@ -19,11 +19,6 @@
   margin-left: 50px;
 }
 
-#main {
-  transition: margin-left 0.5s;
-  padding: 0 64px 0 64px;
-}
-
 .sidebar--active {
   position: fixed;
   top: 0;

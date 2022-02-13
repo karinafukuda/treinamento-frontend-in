@@ -25,11 +25,6 @@
   text-decoration: none;
 }
 
-.employee__list__title,
-.employee__list > * a {
-  margin-left: 30px;
-}
-
 .jobs__list a:hover,
 .employee__listed a:hover {
   color: var(--yellow);
@@ -40,22 +35,28 @@
 @media all and (min-width: 1200px) {
   .jobs__list > * a,
   .employee__list > * a {
-    width: 380px;
+    min-width: 380px;
   }
 }
 
 @media all and (max-width: 1100px) {
   .jobs__list > * a,
   .employee__list > * a {
-    width: 300px;
-    height: auto;
+    min-width: 300px;
   }
 }
 
-@media all and (max-width: 890px) {
+@media all and( max-height: 450px) {
+  .jobs__list__title,
+  .employee__list__title {
+    margin-top: 0;
+  }
+
   .jobs__list > * a,
   .employee__list > * a {
-    width: 100vw;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 8px 10px 0px 10px;
   }
 }
