@@ -37,10 +37,6 @@ Obs: <strong>o site ainda não foi configurado com responsividade em mobile.</st
 
 ---
 
-Deploy do site ( em andamento)
-
-[https://front-treinamento.netlify.app/](https://front-treinamento.netlify.app/)
-
 ## Links de referência
 
 [https://fontawesome.com/start](https://fontawesome.com/start)
@@ -55,4 +51,4 @@ Deploy do site ( em andamento)
 <br/>
 [https://fonts.google.com](https://fonts.google.com)
 <br/>
-[https://www.w3schools.com/howto/howto_css_parallax.asp](https://www.w3schools.com/howto/howto_css_parallax.asp)
+[https://www.w3schools.com](https://www.w3schools.com)
