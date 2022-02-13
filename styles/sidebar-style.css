@@ -76,24 +76,24 @@
   color: var(--yellow);
 }
 
-/* .sidebar__button:hover {
-  cursor: pointer;
-  color: var(--yellow);
-  transition: 0.5s;
-} */
-
-.sidebar__button--logout {
-  margin-top: auto;
-  margin-bottom: 1.2em;
-}
-
-.sidebar__button--selected > .selected-indicator {
+.sidebar__button:focus > .selected-indicator {
   border-right: 3px var(--yellow) solid;
   border-radius: 5px;
   width: 1px;
   box-shadow: 1px 0 4px rgba(255, 255, 255, 60%);
   position: relative;
   right: 33px;
+}
+
+.sidebar__button:focus {
+  color: var(--yellow);
+  cursor: pointer;
+  transtion: 0.3s;
+}
+
+.sidebar__button--logout {
+  margin-top: auto;
+  margin-bottom: 1.2em;
 }
 
 #btn__display button {
