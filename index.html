@@ -29,23 +29,29 @@
   </head>
   <body>
     <!-- Menu lateral -->
-    <div class="sidebar">
+    <span id="btn__display">
+      <button class="close__btn" onclick="openNav()">☰ Open Sidebar</button>
+    </span>
+    <div class="sidebar sidebar--active" id="mySidebar">
+      <div class="sidebar__box__btn">
+        <button id="btn-sidebar" class="sidebar__btn" onclick="closeNav()">X</button>
+      </div>
         <div class="sidebar__title">
           <img class="sidebar__title__img" src="images/logo_inmetrics.png" alt="logo Inmetrics"/>
         </div>
         <span class="sidebar__menutitle"> General </span>
         <div class="sidebar__menu">
-          <button class="sidebar__button sidebar__button--selected">
+          <button id="sidebar__button" class="sidebar__button ">
             <span class="selected-indicator"></span>
             <i class="fas fa-columns"></i>
             Dashboard
           </button>
-          <button class="sidebar__button">
+          <button id="sidebar__button" class="sidebar__button">
             <span class="selected-indicator"></span>
             <i class="fas fa-wallet"></i>
             My Wallet
           </button>
-          <button class="sidebar__button">
+          <button id="sidebar__button" class="sidebar__button">
             <span class="selected-indicator"></span>
             <i class="fas fa-chart-line"></i> Activity
           </button>
@@ -57,16 +63,16 @@
       </div>
     </div>
     <!-- Conteúdo principal -->
-    <div class="page">
+    <div class="page" id="main">
       <!-- Headers - Títulos -->
       <div class="navbar">            
           <div class="navbar__searchbox"> 
             <i class="fas fa-search"></i>         
             <input  type="text" placeholder="Busque pelo nome do colaborador" /></i>
           </div>
-          <br/><br/><br/>
+
           <div>
-            <button class="navbar__button">Connect Wallet</button>
+            <button class="navbar__button">Meu perfil</button>
             <img
               class="navbar__useravatar__photo"
               src="./images/user-photo.png"
@@ -84,7 +90,7 @@
         <!-- Botões filtro - tips -->
         <div class="buttons__filter">
           <div class="button__filter animation" type="text"> <a href="#"><i class="fas fa-people-arrows"></i> Cargo</a></div>
-          <div class="button__filter animation" type="text"> <a href="#"><i class="fas fa-tasks"></i> Horizontal</a></div>
+          <div class="button__filter animation" type="text"> <a href="#"><i class="fas fa-tasks"></i> Setor</a></div>
           <div class="button__filter animation" type="text"> <a href="#"><i class="far fa-file-code"></i> Tecnologia</a> </div>
           <div class="button__filter animation" type="text"> <a href="#"><i class="fas fa-user-astronaut"></i> Gestor</a></div>
         </div>
@@ -97,7 +103,7 @@
                 <img  alt="logo react.js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"/>               
               </div>             
               <h3 class="employee__title">Pessoa 01</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -105,7 +111,7 @@
                 <img alt="logo angular" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-plain.svg"/> 
               </div>             
               <h3 class="employee__title">Pessoa 02</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -113,7 +119,7 @@
                 <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
               </div>         
               <h3 class="employee__title">Pessoa 03</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -121,7 +127,7 @@
                 <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
               </div>
               <h3 class="employee__title">Pessoa 04</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -129,7 +135,7 @@
                 <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
               </div>
               <h3 class="employee__title">Pessoa 05</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -137,7 +143,7 @@
                 <img  alt="logo javascript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"/>
               </div>
               <h3 class="employee__title">Pessoa 06</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -145,7 +151,7 @@
                 <img  alt="logo javascript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"/>
               </div>     
               <h3 class="employee__title">Pessoa 07</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -153,7 +159,7 @@
                 <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
               </div>
               <h3 class="employee__title">Pessoa 08</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -161,7 +167,7 @@
                 <img alt="logo angular" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-plain.svg"/> 
               </div>             
               <h3 class="employee__title">Pessoa 09</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -169,7 +175,7 @@
                 <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
               </div>         
               <h3 class="employee__title">Pessoa 10</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -177,7 +183,7 @@
                 <img  alt="logo typescript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"/>
               </div>
               <h3 class="employee__title">Pessoa 11</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div> 
             <div class="employee">
               <div class="employee__images" style="display:inline-flex">
@@ -185,13 +191,13 @@
                 <img  alt="logo react.js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"/>
               </div>              
               <h3 class="employee__title">Pessoa 12</h3>
-              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Horizontal:</strong> Prod.digitais</p>
+              <p class="employee__job"><strong>Cargo:</strong> Desenvolvedor(a)<br/> <strong>Setor:</strong> Prod.digitais</p>
             </div>         
           </div>
           <br/>
-          <!--Display colaborador sem alocação-->
+          <!--Display colaborador -->
            <div class="employee__list__no__allocation">
-                <h4 class="employee__list__title__no__allocation">Colaboradores sem alocação</h5>
+                <h4 class="employee__list__title__no__allocation">Colaboradores ativos</h5>
                 <ol>
                   <li class="employee__listed__no__allocation">
                     Maria Luiza em 01/02/22
@@ -217,10 +223,10 @@
           <div class="displays__info">
             <div class="jobs__list">
               <h3 class="jobs__list__title">Vagas em aberto</h3>
-              <div class="job" type="text"><a href="#">  Itaú</a></div>
-              <div class="job" type="text"> <a href="#">  Bradesco</a></div>
-              <div class="job" type="text"> <a href="#"> Santander</a> </div>
-              <div class="job" type="text"><a href="#">  Digio</a></div>
+              <div class="job" type="text"><a href="#">  Cliente </a></div>
+              <div class="job" type="text"> <a href="#">  Cliente</a></div>
+              <div class="job" type="text"> <a href="#"> Cliente</a> </div>
+              <div class="job" type="text"><a href="#">  Cliente</a></div>
             </div>
             <!--Lista Admitidos-->
             <div class="employee__list">
@@ -236,6 +242,17 @@
     <footer>
       <p>Desenvolvido por &copy; Karina Fukuda ' 2022</p>
     </footer>
-    
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+    <script src="./main.js"></script>
   </body>
 </html>

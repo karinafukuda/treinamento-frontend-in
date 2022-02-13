@@ -1,7 +1,8 @@
 .section {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 1em;
+  margin-top: 1em;
 }
 
 .employee__list__no__allocation {
@@ -9,7 +10,7 @@
   bottom: 40px;
   background-color: var(--gray);
   opacity: 0.7;
-  width: 300px;
+  width: 270px;
   border-radius: 15px;
 }
 
@@ -21,13 +22,12 @@
 .employee__list__no__allocation {
   text-align: center;
   color: var(--dark-gray);
-
   font-weight: 300;
 }
 
 .employee__listed__no__allocation {
   background-color: var(--dark-gray);
-  opacity: 0.7;
+  opacity: 0.9;
   font-weight: 300;
   padding: 4px;
   color: var(--white);
@@ -42,9 +42,12 @@
   left: 75px;
   bottom: 12px;
   color: #000;
-  font-size: 12px;
+  font-size: 0.8em;
+  font-weight: 700;
 }
 
 .employee__list__link:hover {
   color: var(--yellow);
+  font-size: 0.9em;
+  transition: 0.5s;
 }

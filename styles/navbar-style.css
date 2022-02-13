@@ -5,7 +5,8 @@
   align-items: baseline;
   flex-wrap: wrap;
   grid-area: navbar;
-  margin-buttom: 40px;
+  margin-buttom: 2em;
+  margin-top: 0;
 }
 
 .navbar__searchbox input {
@@ -16,15 +17,17 @@
   outline: none;
   color: var(--white);
   font-weight: 500;
-  padding: 12px 6px 12px 46px;
-  font-size: 14px;
-  width: 380px;
+  padding: 1rem 0.5rem 1rem 3rem;
+  font-size: 0.8em;
+  width: 36em;
+  margin-bottom: 2.5em;
+  text-transform: uppercase;
 }
 
 .fa-search {
   position: absolute;
   z-index: 1;
-  margin-top: 21.5px;
+  margin-top: 1.5em;
   color: var(--white);
   transform: translate(100%, -50%);
 }

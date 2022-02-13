@@ -21,17 +21,8 @@
   background-color: var(--bg-gray-tips);
   opacity: 0.9;
   border-radius: 16px;
-  min-width: 140px;
   color: var(--white);
   text-decoration: none;
-}
-
-.jobs__list > * a {
-  width: 240px;
-}
-
-.employee__list > * a {
-  width: 780px;
 }
 
 .employee__list__title,
@@ -49,7 +40,7 @@
 @media all and (min-width: 1200px) {
   .jobs__list > * a,
   .employee__list > * a {
-    width: 540px;
+    width: 380px;
   }
 }
 

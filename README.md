@@ -1,6 +1,4 @@
-# Aulas de Frontend na Firma  <img alt="logo html5" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg"/><img  alt="logo css3" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg"/>
-
-  
+# Aulas de Frontend na Firma <img alt="logo html5" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg"/><img  alt="logo css3" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg"/>
 
 Sim, gente! A Inmetrics também treina muito os colaboradores.
 Esse repô foi para usar uma referência e aplicar alguns conceitos passados durante o treinamento, ministrado pelo Gabriel Zanoni (front-end sênior).
@@ -39,11 +37,9 @@ Obs: <strong>o site ainda não foi configurado com responsividade em mobile.</st
 
 ---
 
-## Deploy
+Deploy do site ( em andamento)
 
-<a href="https://frontend-in.netlify.app/"> Acesse o site aqui</a>
-
----
+[https://front-treinamento.netlify.app/](https://front-treinamento.netlify.app/)
 
 ## Links de referência
 
