@@ -30,7 +30,7 @@
   margin-top: -20px;
   padding: 0.5rem;
   text-align: left;
-  width: 500px;
+  max-width: 500px;
 }
 
 @media screen and (max-width: 660px) {
@@ -39,7 +39,18 @@
   }
 
   #main {
-    transition: margin-left 0.5s;
+    max-width: 400px;
+    transition: margin-left 0.3s;
     padding: 0 2em 0 2em;
+  }
+
+  .page__header__title {
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .page__header__subtitle {
+    text-align: center;
+    font-size: 1em;
   }
 }

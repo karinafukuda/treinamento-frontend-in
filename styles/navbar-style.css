@@ -5,8 +5,7 @@
   align-items: baseline;
   flex-wrap: wrap;
   grid-area: navbar;
-  margin-buttom: 2em;
-  margin-top: -3em;
+  margin-buttom: 1em;
 }
 
 .navbar__searchbox input {
@@ -27,7 +26,7 @@
 .fa-search {
   position: absolute;
   z-index: 1;
-  margin-top: -1.5em;
+  margin-top: -1.5rem;
   color: var(--white);
   transform: translate(100%, -50%);
 }
@@ -82,37 +81,11 @@
   }
 }
 
-@media screen and(max-height: 450px) {
+@media screen and(max-width: 660px) {
   .navbar__searchbox input {
-    position: relative;
-    bottom: 500px;
-    margin-top: 4em;
-    width: 220px;
-    margin-left: 0.45em;
+    width: 280;
+  }
+
+  .fa-search {
   }
 }
-
-/* @media all and (max-width: 920px) {
-  .navbar__button {
-    margin-top: 12px;
-    position: relative;
-  }
-
-  .navbar__searchbox input {
-    width: 240px;
-  }
-}
-
-@media all and (max-width: 710px) {
-  .navbar__useravatar__photo {
-    display: none;
-  }
-
-  .navbar__button {
-    margin-bottom: 30px;
-  }
-
-  .navbar {
-    flex-direction: column;
-  }
-} */

@@ -52,8 +52,8 @@
   transition: 0.5s;
 }
 
-@media screen and(max-height: 450px) {
-  .display {
-    display: none;
+@media screen and(max-width: 740px) {
+  #display {
+    display: none !important;
   }
 }

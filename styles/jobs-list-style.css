@@ -47,13 +47,13 @@
 }
 
 @media all and( max-height: 450px) {
-  .jobs__list__title,
-  .employee__list__title {
+  .jobs__list__title h3,
+  .employee__list__title h3 {
     margin-top: 0;
   }
 
-  .jobs__list > * a,
-  .employee__list > * a {
+  .jobs__list a,
+  .employee__list a {
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -40,6 +40,7 @@ h5 {
 .line {
   display: flex;
   margin-top: 20px;
+  margin-left: 8px;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
@@ -51,4 +52,9 @@ footer {
   margin: 0 auto;
   color: var(--gray);
   font-size: 12px;
+}
+
+@media screen and(max-height: 450px) {
+  footer {
+  }
 }

@@ -2,18 +2,17 @@
   inline-size: -webkit-fill-available;
   display: inline-flex;
   flex-wrap: no-wrap;
-  width: 150px;
+  width: 200px;
   margin: 0;
 }
 
 .button__filter > a {
   margin: 5px;
-  padding: 10px;
+  padding: 0.5em 1.1em;
   background-color: var(--gray);
   opacity: 0.9;
   border-radius: 24px;
-
-  width: 150px;
+  min-width: 150px;
   color: var(--white);
   text-decoration: none;
   text-align: center;
@@ -41,5 +40,9 @@
   }
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 960px) {
+  .buttons__filter {
+    margin-left: 4rem;
+    width: 290px;
+  }
 }

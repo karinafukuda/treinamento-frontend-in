@@ -1,6 +1,6 @@
 .employee__group {
  display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
  grid-template-columns: 260px /auto auto auto;
  grid-column-gap: 2px;
  grid-row-gap: 2px;
@@ -54,37 +54,22 @@
 @media all and (max-width: 1300px) {
  .employee__group {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
  }
 }
 
 @media all and (max-width: 960px) {
   .employee__group {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-  }
- }
-
- /* @media all and (max-width: 840px) {
-  .employee__group {
-    display: grid;
-    grid-template-columns: 1fr  ;
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
   }
  }
 
  @media all and (max-width: 690px) {
   .employee__group {
     display: grid;
-    grid-template-columns: 1fr  1fr ;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
+    grid-template-columns: 1fr 1fr ;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
   }
-
-  .employee {
-    max-width: 80vw;
-    height: 260px;
-    margin-top: 12px;
-    margin-left: 5px;
-    box-shadow: 1.4px 1px 2px 2px rgba(10, 20, 40, 0.84);
-   }
- } */
+} 
